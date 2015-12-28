@@ -1,7 +1,6 @@
 package com.leourbina.service;
 
 import com.google.common.base.Preconditions;
-import com.google.inject.AbstractModule;
 import com.google.inject.Module;
 
 public class ServiceConfiguration {
@@ -39,8 +38,8 @@ public class ServiceConfiguration {
   }
 
   public static class Builder extends ServiceConfiguration {
-    public static int DEFAULT_PORT = 8080;
-    public static String DEFAULT_APP_ROOT = "/";
+    public static final int DEFAULT_PORT = 8080;
+    public static final String DEFAULT_APP_ROOT = "/";
 
     private Package basePackage = null;
     private Module module = null;
